@@ -60,12 +60,12 @@
         <div class="col-6">
           <div class="row">
             <div class="col">
-              <input type="checkbox" class="checkbox" id="Men">
-              <label for="Men">Men </label>
+              <input type="checkbox" class="checkbox" id="Men" onchange="showOrHide(sectionTwo, Men)">
+              <label for="Men">Men</label>
             </div>
             <div class="col">
               <input type="checkbox" class="checkbox" id="WoMen">
-              <label for="WoMen">WoMen </label>
+              <label for="WoMen">WoMen</label>
             </div>
             <div class="col">
               <input type="checkbox" class="checkbox" id="children">
@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="section_two">
+    <section class="section_two" id="sectionTwo" >
       <div class="row justify-content-center padding_men">
         <div class="col-2">
           <span class="section_two_category">men</span>

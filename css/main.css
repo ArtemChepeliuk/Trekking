@@ -122,7 +122,9 @@ input[type="checkbox"]:checked+label::before {
 .padding_men {
   padding: 85px 95px 0;
 }
-
+.section_two {
+  /* display: none; */
+}
 .section_two_category {
   color: #333333;
   font-family: "Quicksand Bold";
@@ -193,25 +195,4 @@ hr {
 .no_wrap {
   height: 385px;
   flex-wrap: nowrap;
-}
-
-.select_size {
-  max-width: 150px;
-  font-size: 16px;
-  text-align: center;
-  position: absolute;
-}
-
-.select_size ul {
-  list-style: none;
-  padding: 0;
-  width: 60px;
-  background-color: #cfc6b0;
-}
-
-.select_size li:hover{
-  background-color: #aa9b77;
-}
-.select::after {
-  content: '\f078';
 }
