@@ -1,6 +1,8 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 
+
+
 function plusDivsMen(n) {
     showDivs(slideIndex += n);
 }
@@ -8,17 +10,15 @@ function plusDivsMen(n) {
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("slider_men");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+    if (n > x.length) {
+        slideIndex = 1
     }
-    x[slideIndex-1].style.display = "flex"; 
+    if (n < 1) {
+        slideIndex = x.length
+    };
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "flex";
+    document.getElementById('number').innerHTML = slideIndex;
 }
-
-
-$(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 6000
-    })
-  });
