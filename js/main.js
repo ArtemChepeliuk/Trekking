@@ -21,30 +21,12 @@ function showDivs(n) {
     document.getElementById('number').innerHTML = slideIndex;
 }
 
-
-
-
-function showOrHide(checkbox, section) {
-    var checkbox = document.getElementById('Men');
-    var section = document.getElementById("sectionTwo");
+function showOrHide(sectionId, checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
+    var section = document.getElementById(sectionId);
     if (checkbox.checked) {
         section.style.display = "block";
     } else {
         section.style.display = "none";
     }
 }
-
-$(document).ready(function(){    
-    $('.checkbox').change(function() {
-        if (this.checked) {
-            console.log('chek');
-        } 
-            else {
-                console.log('no');
-            }
-    });
-});
-
-
-// $().style.display = "block";
-// section.style.display = "none";
