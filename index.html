@@ -60,11 +60,13 @@
         <div class="col-6">
           <div class="row">
             <div class="col">
-              <input type="checkbox" class="checkbox" id="Men" onchange="showOrHide(sectionTwo, Men)">
+              <input type="checkbox" class="checkbox" id="Men"  onchange="showOrHide(sectionTwo, Men)" checked>
               <label for="Men">Men</label>
+              <!-- onchange="showOrHide(sectionTwo, Men)"
+              onchange="showOrHide(sectionThree, WoMen)" -->
             </div>
             <div class="col">
-              <input type="checkbox" class="checkbox" id="WoMen">
+              <input type="checkbox" class="checkbox" id="WoMen" > 
               <label for="WoMen">WoMen</label>
             </div>
             <div class="col">
@@ -297,7 +299,225 @@
         </div>
       </div>
     </section>
-
+    <section class="section_two" id="sectionThee" >
+      <div class="row justify-content-center padding_men">
+        <div class="col-2">
+          <span class="section_two_category">men</span>
+        </div>
+        <div class="col-10">
+          <hr>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-end">
+        <div class="col-1">
+          <span class="text_color-brown"><span class="text_color-brown"  id="number"></span>/3</span>
+          <p>
+            <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsMen(-1)"></i>
+            <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsMen(+1)"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-around no_wrap slider_men">
+        <div class="col-auto brown-border background-grey padding_men_block">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="col circle_flow">
+              <div class="blue_circle"></div>
+              <div class="yellow_circle"></div>
+              <div class="grey_circle"></div>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/livello-2.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>T-shirt</span>
+            </div>
+            <div class="col">
+              <div class="price">5,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block ">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/livello-3.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>Pants</span>
+            </div>
+            <div class="col">
+              <div class="price">40,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block ">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>10litri</span>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/livello-4.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>Pants</span>
+            </div>
+            <div class="col">
+              <div class="price">50,00€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around no_wrap slider_men">
+        <div class="col-auto brown-border background-grey padding_men_block">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="col circle_flow">
+              <div class="blue_circle"></div>
+              <div class="yellow_circle"></div>
+              <div class="grey_circle"></div>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>sport suit</span>
+            </div>
+            <div class="col">
+              <div class="price">90,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="col circle_flow">
+              <div class="blue_circle"></div>
+              <div class="yellow_circle"></div>
+              <div class="grey_circle"></div>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men2.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>Pants</span>
+            </div>
+            <div class="col">
+              <div class="price">30,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="col circle_flow">
+              <div class="blue_circle"></div>
+              <div class="yellow_circle"></div>
+              <div class="grey_circle"></div>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men3.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>shorts</span>
+            </div>
+            <div class="col">
+              <div class="price">25,00€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around no_wrap slider_men">
+        <div class="col-auto brown-border background-grey padding_men_block">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="col circle_flow">
+              <div class="blue_circle"></div>
+              <div class="yellow_circle"></div>
+              <div class="grey_circle"></div>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men4.PNG" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>shorts</span>
+            </div>
+            <div class="col">
+              <div class="price">15,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block ">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>SIZE</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men5.PNG" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>shorts</span>
+            </div>
+            <div class="col">
+              <div class="price">20,00€</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto brown-border background-grey padding_men_block ">
+          <div class="row d-flex justify-content-between">
+            <div class="col">
+              <span>10litri</span>
+            </div>
+          </div>
+          <div class="goods_height">
+            <img src="img/men7.png" alt="livello">
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col ba text_color-brown">
+              <span>sneakers</span>
+            </div>
+            <div class="col">
+              <div class="price">70,00€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
