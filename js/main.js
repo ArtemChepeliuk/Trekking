@@ -1,25 +1,49 @@
 var slideIndex = 1;
-showDivs(slideIndex);
+showDivsMen(slideIndex);
 
-function plusDivsMen(n) {
-    showDivs(slideIndex += n);
+function plusDivsMen(n, className) {
+    showDivsMen(slideIndex += n);
+
 }
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("slider_men");
-    if (n > x.length) {
+function showDivsMen(n, className) {
+    var slider = document.getElementsByClassName(className);
+    if (n > slider.length) {
         slideIndex = 1
     }
     if (n < 1) {
-        slideIndex = x.length
+        slideIndex = slider.length
     };
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    for (let i = 0; i < slider.length; i++) {
+        slider[i].style.display = "none";
     }
-    x[slideIndex - 1].style.display = "flex";
-    document.getElementById('number').innerHTML = slideIndex;
+    slider[slideIndex - 1].style.display = "flex";
+    document.getElementById('numberMen').innerHTML = slideIndex;
 }
+
+
+
+showDivsWomen(slideIndex);
+
+function plusDivsWomen(n) {
+    showDivsWomen(slideIndex += n);
+}
+
+function showDivsWomen(n) {
+    var slider = document.getElementsByClassName("slider_women");
+    if (n > slider.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slider.length
+    };
+    for (let i = 0; i < slider.length; i++) {
+        slider[i].style.display = "none";
+    }
+    slider[slideIndex - 1].style.display = "flex";
+    document.getElementById('numberWomen').innerHTML = slideIndex;
+}
+
 
 function showOrHide(sectionId, checkboxId) {
     var checkbox = document.getElementById(checkboxId);

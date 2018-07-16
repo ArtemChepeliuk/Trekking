@@ -60,11 +60,11 @@
         <div class="col-6">
           <div class="row">
             <div class="col">
-              <input type="checkbox" class="checkbox" id="Men"  onchange="showOrHide('sectionTwo', 'Men')" checked>
+              <input type="checkbox" class="checkbox" id="Men" onchange="showOrHide('sectionTwo', 'Men')" checked>
               <label for="Men">Men</label>
             </div>
             <div class="col">
-              <input type="checkbox" class="checkbox" id="WoMen" onchange="showOrHide('sectionThree', 'WoMen')"> 
+              <input type="checkbox" class="checkbox" id="WoMen" onchange="showOrHide('sectionThree', 'WoMen')">
               <label for="WoMen">WoMen</label>
             </div>
             <div class="col">
@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="section_two" id="sectionTwo" >
+    <section class="section_two checked" id="sectionTwo">
       <div class="row justify-content-center padding_men">
         <div class="col-2">
           <span class="section_two_category">men</span>
@@ -89,10 +89,11 @@
       </div>
       <div class="row d-flex justify-content-end">
         <div class="col-1">
-          <span class="text_color-brown"><span class="text_color-brown"  id="number"></span>/3</span>
+          <span class="text_color-brown">
+            <span class="text_color-brown" id="numberMen"></span>/3</span>
           <p>
-            <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsMen(-1)"></i>
-            <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsMen(+1)"></i>
+            <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsMen(-1, slider_men)"></i>
+            <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsMen(+1, 'slider_men')"></i>
           </p>
         </div>
       </div>
@@ -297,25 +298,26 @@
         </div>
       </div>
     </section>
-    <section class="section_two" id="sectionThree" >
+    <section class="section_two" id="sectionThree">
       <div class="row justify-content-center padding_men">
-        <div class="col-2">
-          <span class="section_two_category">men</span>
-        </div>
         <div class="col-10">
           <hr>
         </div>
+        <div class="col-2">
+          <span class="section_two_category">Women</span>
+        </div>
       </div>
-      <div class="row d-flex justify-content-end">
+      <div class="row d-flex justify-content-start">
         <div class="col-1">
-          <span class="text_color-brown"><span class="text_color-brown"  id="number"></span>/3</span>
+          <span class="text_color-brown">
+            <span class="text_color-brown" id="numberWomen"></span>/3</span>
           <p>
-            <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsMen(-1)"></i>
-            <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsMen(+1)"></i>
+            <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsWomen(-1)"></i>
+            <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsWomen(+1)"></i>
           </p>
         </div>
       </div>
-      <div class="row justify-content-around no_wrap slider_men">
+      <div class="row justify-content-around no_wrap slider_women">
         <div class="col-auto brown-border background-grey padding_men_block">
           <div class="row d-flex justify-content-between">
             <div class="col">
@@ -329,14 +331,14 @@
             </div>
           </div>
           <div class="goods_height">
-            <img src="img/livello-2.png" alt="livello">
+            <img src="img/livello-5.png" alt="livello">
           </div>
           <div class="row d-flex justify-content-between">
             <div class="col ba text_color-brown">
-              <span>T-shirt</span>
+              <span>Giacket</span>
             </div>
             <div class="col">
-              <div class="price">5,00€</div>
+              <div class="price">60,00€</div>
             </div>
           </div>
         </div>
@@ -348,21 +350,21 @@
             </div>
           </div>
           <div class="goods_height">
-            <img src="img/livello-3.png" alt="livello">
+            <img src="img/livello-6.png" alt="livello">
           </div>
           <div class="row d-flex justify-content-between">
             <div class="col ba text_color-brown">
-              <span>Pants</span>
+              <span>trekking shoes</span>
             </div>
             <div class="col">
-              <div class="price">40,00€</div>
+              <div class="price">80,00€</div>
             </div>
           </div>
         </div>
         <div class="col-auto brown-border background-grey padding_men_block ">
           <div class="row d-flex justify-content-between">
             <div class="col">
-              <span>10litri</span>
+              <span>Size</span>
             </div>
           </div>
           <div class="goods_height">
@@ -370,15 +372,15 @@
           </div>
           <div class="row d-flex justify-content-between">
             <div class="col ba text_color-brown">
-              <span>Pants</span>
+              <span>T-shirt</span>
             </div>
             <div class="col">
-              <div class="price">50,00€</div>
+              <div class="price">20,00€</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-around no_wrap slider_men">
+      <div class="row justify-content-around no_wrap slider_women">
         <div class="col-auto brown-border background-grey padding_men_block">
           <div class="row d-flex justify-content-between">
             <div class="col">
@@ -452,7 +454,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-around no_wrap slider_men">
+      <div class="row justify-content-around no_wrap slider_women">
         <div class="col-auto brown-border background-grey padding_men_block">
           <div class="row d-flex justify-content-between">
             <div class="col">
@@ -516,7 +518,7 @@
         </div>
       </div>
     </section>
-    <section class="section_two" id="sectionFour" >
+    <section class="section_two" id="sectionFour">
       <div class="row justify-content-center padding_men">
         <div class="col-2">
           <span class="section_two_category">men</span>
@@ -527,7 +529,8 @@
       </div>
       <div class="row d-flex justify-content-end">
         <div class="col-1">
-          <span class="text_color-brown"><span class="text_color-brown"  id="number"></span>/3</span>
+          <span class="text_color-brown">
+            <span class="text_color-brown" id="number"></span>/3</span>
           <p>
             <i class="fas fa-chevron-left text_color-brown" onclick="plusDivsMen(-1)"></i>
             <i class="fas fa-chevron-right text_color-brown" onclick="plusDivsMen(+1)"></i>
